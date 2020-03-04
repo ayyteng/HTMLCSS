@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    }
+
+#container {
+    background-color: white;
+    background-image: url(other/background.jpg);
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+.row > img {
+    padding-left: .8rem;
+}
+
+video {
+    mix-blend-mode: multiply;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+audio {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#king {
+    float:right;
+    margin-top: 5rem;
+}
