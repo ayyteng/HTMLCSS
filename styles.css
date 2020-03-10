@@ -4,10 +4,39 @@ body {
     padding: 0;
     }
 
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes move2 {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+#nyan {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#nyan2 {
+  animation-name: move2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 #container {
     background-color: white;
-    background-image: url(other/background.jpg);
-    background-size: cover;
+    background-image: url(other/stars.gif), url(other/space.jpg);
     min-height: 100%;
     min-width: 100%;
     width: auto;
@@ -17,17 +46,6 @@ body {
     left: 0;
 }
 
-.row {
-    max-width: 100%;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-}
-
-.row > img {
-    padding-left: .8rem;
-}
 
 video {
     mix-blend-mode: multiply;
@@ -47,6 +65,7 @@ audio {
 }
 
 #king {
+
     float:right;
     margin-top: 5rem;
 }
